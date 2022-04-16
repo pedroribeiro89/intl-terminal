@@ -8,6 +8,7 @@ Show data on a styled table using Intl in terminal
 - Practice Unit test and test coverage
 - Try Jest
 
+
 ## Input format:
 
 - 1 Motorcycle,Car,Plane 10000 2009-01-01 2020-11-26
