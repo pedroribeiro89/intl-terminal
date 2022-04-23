@@ -23,8 +23,12 @@ export default class TerminalController {
         this.terminal.close()
     }
 
+    convertDatabaseJsonToPersonArray(database, language) {
+        return database.map(item => new Person(item).formatted(language));
+    }
+
     initTable(database, language) {
-        const data = database.map(item => new Person(item).formatted(language));
+        const data = this.convertDatabaseJsonToPersonArray(database, language);
         const table = chalkTable(this.getTableOptions(), data);
 
         this.print = console.draft(table);

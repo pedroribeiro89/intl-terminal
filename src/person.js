@@ -25,7 +25,7 @@ export default class Person {
                 .format(mapDate(this.from)),
             to: new Intl
                 .DateTimeFormat(language, {month: 'long', day: '2-digit', year: 'numeric'})
-                .format(mapDate(this.from))
+                .format(mapDate(this.to))
         }
     }
 
